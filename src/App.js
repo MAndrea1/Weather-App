@@ -44,6 +44,10 @@ function App() {
   }, [lat, lon])
 
   useEffect(() => {
+    fetchData2('Sidney')
+  }, [])
+
+  useEffect(() => {
     const width = listRef.current.offsetWidth ;
     const height = listRef.current.offsetHeight;
     console.log("width", width);
