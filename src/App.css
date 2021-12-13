@@ -1,38 +1,125 @@
 .App {
-  text-align: center;
+  background-color: DarkSlateBlue;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 100vh;
+}
+
+.WeatherByCity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #C6A6F9;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-bottom:10px;
+  column-gap:10px;
+}
+
+.TypeCity {
+  width: 40%;
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing : border-box;
+  box-sizing : border-box;
+  height: 35px;
+  background-color:#BDA2E7;
+  border: 0;
+  border-bottom:1px solid #C6A6F9;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #2F0A4F;
+  opacity: 1; /* Firefox */
+}
+
+.TypeCity, select, textarea{
+  color: #2F0A4F;
+  font-size:18px;
+}
+
+.ui.button.buttonsend{
+  background-color:#BDA2E7;  
+}
+
+.ui.button.buttonsend:hover{
+  background-color:#ffffff;  
+}
+
+.ui.button.buttonsend:focus{
+  background-color:#ffffff;  
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  justify-content: space-between;
+  background-color: MidnightBlue;
+  padding-top:20px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.weathercontent {
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weathericon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right:-10px
+}
+
+div.weathericon img {
+  height: 80px;
+  margin-top: -20px;
+}
+
+div.weathericon p {
+  margin-top: -15px;
+}
+
+.cardbodycontent {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.CardContainer {
+  position:relative;
+  margin-bottom:40px;
+}
+
+.heightwidthref {
+  position:absolute;
+  z-index: 10;
+}
+
+.Shadow {
+  position: absolute;
+  background-color: #28104F;
+  z-index: 0;
+  top: 10px;
+  left: 20px;
 }
